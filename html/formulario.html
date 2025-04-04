@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="../js/formulario.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+        <div class="tudo">
+            <div class="voltar">
+                <a onclick="window.location.href='../index.php'"><img src="../icon/voltar.png"></a>
+            </div>
+            <form action="#acao" method="post">
+                <div class="formulario">
+                    <h1>Formulário</h1>
+                    <p>Preencha os campos abaixo:</p>
+                    <div class="campos-bloco">
+                        <label for="nome">Nome:</label>
+                        <input for="nome" type="text" name="nome" value="#nome" class="campos" required>
+                    </div>
+                    <div class="campos-bloco">
+                        <label for="email">E-mail:</label>
+                        <input for="email" type="email" name="email" value="#email" class="campos" required>
+                    </div>
+                    <div class="campos-bloco-dois">
+                        <div class="campos-bloco">
+                            <label for="cpf">Cpf:</label>
+                            <input for="cpf" type="text" name="cpf" value="#cpf" class="campos"  maxlength="11" required>
+                        </div>
+                        <div class="campos-bloco">
+                            <label for="celular">Celular:</label>
+                            <input for="celular" type="text" name="celular" value="#celular" class="campos" required>
+                        </div>
+                    </div>
+               
+                        <div class="campos-bloco senha-container">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" value="#senha" class="campos" required>
+                            <button type="button" class="olho" id="olho-senha" onclick="senha_visivel('senha', 'icone-senha')">
+                                <img src="../icon/ocultar.svg" alt="Mostrar Senha" id="icone-senha">
+                            </button>
+                        </div>
+                        <div class="campos-bloco senha-container">
+                            <label for="confirme">Confirme a senha:</label>
+                            <input type="password" name="confirme" id="confirme"  value="#confirme" class="campos" required>
+                            <button type="button" class="olho" id="olho-confirme" onclick="senha_visivel('confirme', 'icone-confirme')">
+                                <img src="../icon/ocultar.svg" alt="Mostrar Senha" id="icone-confirme">
+                            </button>
+                        </div>
+                    <div class="enviar-bloco">
+                        <button type="submit" class="enviar"><img src="../icon/enviar.png">#botao</button>
+                    </div>
+                </div>
+                <input name="id" type="hidden" value="#id">
+                <input name="operacao" type="hidden" value="#operacao">
+            </form>
+        </div>
+</body>
+</html>

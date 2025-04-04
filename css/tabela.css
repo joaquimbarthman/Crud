@@ -1,0 +1,245 @@
+body {
+    font-family: 'ClashDisplay-Regular';
+    background: #ddd;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tudo{ 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(201, 201, 201);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 135px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adicionar img{
+    height: 40px;
+    width: 40px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pesquisar{
+    font-family: 'ClashDisplay-Regular';
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisar input::placeholder {
+    font-family: 'ClashDisplay-Regular';
+    color: #000000;
+}
+
+.pesquisar input{
+    font-family: 'ClashDisplay-Regular';
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.pesquisar button{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.pesquisar button:hover{
+    background: #b9b9b9;
+}
+
+.pesquisar img{
+    height: 20px;
+    width: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px 30px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+th:first-child {
+    border-top-left-radius: 20px;
+}
+th:last-child {
+    border-top-right-radius: 20px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+
+.botoes a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botoes {
+    display: flex;
+    gap: 5px;
+}
+
+.botao.editar img{
+    height: 18px;
+    width: 18px;
+}
+
+.botao.excluir img{
+    height: 20px;
+    width: 20px;
+}
+
+.botao.editar {
+    background-color: #077bff;
+}
+
+.botao.excluir {
+    background-color: #dc3545;
+}
+
+.botao.editar:hover {
+    background-color: #254396;
+}
+
+.botao.excluir:hover{
+    background-color: #7e1d27;
+}
+
+.erro{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+}
+
+.erro img{
+    height: 200px;
+    width: 200px;
+}
+
+.popup {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3675c7;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    transition: top 0.5s ease-in-out;
+}
+
+.popup.show {
+    top: 20px;
+}
+
+.popup button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup button:hover {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.774);
+}
+.popup img{
+    width: 38px;
+    height: 38px;
+}

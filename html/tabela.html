@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/tabela.js"></script>
+    <title>Tabela</title>
+</head>
+<body>
+    <div class="tudo"> 
+        <div class="topo">
+            <div class="titulo">
+                <h1>Tabela De Usuários</h1>
+                <form action="crud.php" method="post">
+                    <div class="cadastrar-bloco">
+                        <a class="adicionar" href="php/crud.php">
+                            <img src="icon/adicionar.png">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="pesquisar">
+            <input type="text" id="buscar" placeholder="Buscar usuário..." onkeyup="pesquisar()">
+            <button onclick="pesquisar()"><img src="icon/lupa.png" alt="Buscar"></button>
+        </div>
+        <div> #tabela </div>
+</body>
+</html>

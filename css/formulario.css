@@ -57,6 +57,13 @@ label{
     width: 90%;
 }
 
+.campos-bloco-dois .campos-bloco{
+    width: 40%;
+}
+
+.campos-bloco-dois .campos-bloco.cpf{
+    width: 55%;
+}
 
 .campos {
     font-family: 'ClashDisplay-Regular';
